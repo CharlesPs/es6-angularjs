@@ -2,6 +2,8 @@
 import angular from 'angular'
 import route from 'angular-route'
 
+import { constants } from './app.constants'
+
 const app = angular.module('ngApp', [route])
 
 app.config(
@@ -23,5 +25,7 @@ app.config(
         }
     ]
 )
+
+app.constant('CONSTANTS', constants)
 
 export default app

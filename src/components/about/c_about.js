@@ -3,14 +3,9 @@ import app from '../../app.module'
 
 import './about.styl'
 
-app.controller(
-    'c_about',
-    [
-        '$scope',
-        ($scope) => {
+const controllerFn = ($scope) => {
 
-            console.log('About')
-        }
-    ]
-    
-)
+    console.log('About')
+}
+
+app.controller('c_about', ['$scope', controllerFn])

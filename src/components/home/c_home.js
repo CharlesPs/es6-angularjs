@@ -3,14 +3,9 @@ import app from '../../app.module'
 
 import './home.styl'
 
-app.controller(
-    'c_home',
-    [
-        '$scope',
-        ($scope) => {
+const controllerFn = ($scope, httpService) => {
 
-            console.log('Home')
-        }
-    ]
-    
-)
+    console.log('Home')
+}
+
+app.controller('c_home', ['$scope', 'httpService', controllerFn])

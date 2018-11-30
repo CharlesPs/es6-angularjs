@@ -3,7 +3,7 @@ import app from '../../app.module'
 
 import './about.styl'
 
-const c_about = app.controller(
+app.controller(
     'c_about',
     [
         '$scope',
@@ -14,5 +14,3 @@ const c_about = app.controller(
     ]
     
 )
-
-export { c_about }

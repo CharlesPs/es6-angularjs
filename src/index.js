@@ -1,6 +1,6 @@
 
-require('./styl/index.styl')
+import './styl/index.styl'
 
-require('./components/main/c_main')
-require('./components/home/c_home')
-require('./components/about/c_about')
+import './components/main/c_main'
+import './components/home/c_home'
+import './components/about/c_about'

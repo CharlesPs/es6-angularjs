@@ -20,6 +20,7 @@ app.config(
                 templateUrl: 'tpl/about.html',
                 controller: 'c_about'
             })
+            .otherwise({ redirectTo: '/' })
 
             $locationProvider.html5Mode(true)
         }

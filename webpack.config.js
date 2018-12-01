@@ -45,6 +45,9 @@ module.exports = {
                     toType: 'template',
                     ignore: [ '*.js', '*.styl' ],
                     force: true
+                },
+                {
+                    from: "./src/.htaccess"
                 }
             ], 
             {
